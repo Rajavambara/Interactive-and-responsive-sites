@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advanced Styling & JS Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Advanced Styling & JS Demo</h1>
+    <p class="lead">Responsive layout • Carousel • Quiz • API fetch</p>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+      <article class="card">
+        <h2>Image Carousel</h2>
+        <div class="carousel" id="carousel">
+          <button class="carousel-btn prev" id="prev">&#9664;</button>
+          <div class="carousel-track" id="track">
+            <img src="https://picsum.photos/id/1015/800/450" alt="1">
+            <img src="https://picsum.photos/id/1016/800/450" alt="2">
+            <img src="httpsum.photos/id/1018/800/450" alt="3">
+            <img src="https://picsum.photos/id/1020/800/450" alt="4">
+          </div>
+          <button class="carousel-btn next" id="next">&#9654;</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Interactive Quiz</h2>
+        <div id="quiz">
+          <div id="question"></div>
+          <div id="answers"></div>
+          <button id="nextQ" class="btn">Next</button>
+          <div id="score" class="score"></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Fetch from API</h2>
+        <p>Click to fetch a random joke from a public API:</p>
+        <button id="fetchJoke" class="btn">Get a Joke</button>
+        <p id="jokeOutput" class="joke"></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Made for practice • Responsive breakpoints included</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
